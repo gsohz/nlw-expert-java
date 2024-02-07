@@ -1,13 +1,19 @@
 package com.gsohz.certification_nlw.modules.students.useCases;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.gsohz.certification_nlw.modules.students.dto.VerifyHasCertificationDTO;
+import com.gsohz.certification_nlw.modules.students.repositories.CertificationStudentRepository;
 
 @Service
 public class VerifyIfHasCertificationUseCase {
+  @Autowired
+  private CertificationStudentRepository certificationStudentRepository;
+
   public boolean execute(VerifyHasCertificationDTO dto) {
-    if (dto.getEmail().equals("fa") && dto.getTechnology().equals("dto")) {
+    var result = certificationStudentRepository.findByStudentEmailAndTechnology(dto.getEmail(), dto.getTechnology());
+    if (result.isEmpty()) {
       return true;
     }
     return false;

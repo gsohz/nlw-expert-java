@@ -12,6 +12,7 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 public class CreateSeed {
   private final JdbcTemplate jdbcTemplate;
 
+  @SuppressWarnings("null")
   public CreateSeed(DataSource dataSource) {
     jdbcTemplate = new JdbcTemplate(dataSource);
   }

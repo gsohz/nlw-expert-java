@@ -27,7 +27,7 @@ Neste projeto, aprendi diversas técnicas e ferramentas importantes para o desen
 
 ## 🔃 Rotas
 ### Students
-#### `POST` **/students** 
+#### **POST** `/students`
 - Verifica se pode realizar teste na tecnologia desejada todas empresas
 
 #### BODY
@@ -38,7 +38,7 @@ Neste projeto, aprendi diversas técnicas e ferramentas importantes para o desen
 }
 ```
 
-#### `POST` **/students/certification/answer**
+#### **POST** `/students/certification/answer`
 - Cadastra a resposta do teste do usuário
 #### BODY
 ```
@@ -63,11 +63,11 @@ Neste projeto, aprendi diversas técnicas e ferramentas importantes para o desen
 ```
  
 ### Questions
-#### `GET` **/questions/technology/{tech}**
+#### **GET** `/questions/technology/{tech}`
 - Retorna as questões de uma determinada tecnologia, por exemplo: `/questions/technology/JAVA`
 
 ### Ranking
-#### `GET` **/ranking/top10**
+#### **GET** `/ranking/top10`
 - Retorna o ranking das 10 pessoas com a maior pontuação
 
 

@@ -26,11 +26,11 @@ Neste projeto, aprendi diversas técnicas e ferramentas importantes para o desen
 - **Uso do Docker:** Aprendi a utilizar o Docker para empacotar, distribuir e executar a aplicação de forma consistente em diferentes ambientes.
 
 ## 🔃 Rotas
-### Students
-#### **POST** `/students`
+### **STUDENTS**
+### POST `/students`
 - Verifica se pode realizar teste na tecnologia desejada todas empresas
 
-#### BODY
+### BODY
 ```
 {
     "email": "gafe.souza@gmail.com",
@@ -38,9 +38,9 @@ Neste projeto, aprendi diversas técnicas e ferramentas importantes para o desen
 }
 ```
 
-#### **POST** `/students/certification/answer`
+### POST `/students/certification/answer`
 - Cadastra a resposta do teste do usuário
-#### BODY
+### BODY
 ```
 {
     "email": "email@email.com",
@@ -62,12 +62,12 @@ Neste projeto, aprendi diversas técnicas e ferramentas importantes para o desen
 }
 ```
  
-### Questions
-#### **GET** `/questions/technology/{tech}`
+### **QUESTIONS**
+### GET `/questions/technology/{tech}`
 - Retorna as questões de uma determinada tecnologia, por exemplo: `/questions/technology/JAVA`
 
-### Ranking
-#### **GET** `/ranking/top10`
+### **RANKING**
+### GET `/ranking/top10`
 - Retorna o ranking das 10 pessoas com a maior pontuação
 
 
